@@ -5,7 +5,8 @@
 IP=192.168.59.103
 PORT=2113
 STREAM=newstream
+TYPE_JSON=application/vnd.eventstore.atom+json
 
 curl \
-    -H "Accept:application/vnd.eventstore.atom+json" \
+    -H "Accept: $TYPE_JSON" \
     "http://$IP:$PORT/streams/$STREAM"
