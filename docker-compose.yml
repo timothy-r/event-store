@@ -1,0 +1,4 @@
+eventstore:
+  build: .
+  ports:
+    - "2113:2113"
