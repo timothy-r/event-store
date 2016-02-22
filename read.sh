@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
-# take stream name as a parameter
+# ought to take stream name as a parameter
 
-curl -H "Accept:application/atom+xml" "http://192.168.59.103:2113/streams/newstream"
+IP=192.168.59.103
+PORT=2113
+STREAM=newstream
+
+curl \
+    -H "Accept:application/atom+xml" \
+    "http://$IP:$PORT/streams/$STREAM"
